@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Pie.css" />
+  </head>
+  <body>
+    <!--LOGO Y MENUS-->
+    <nav class="topheader">
+      <a href="" class="Logo">
+        <img height="55" width="100" src="img/logo_oficial.jpg" alt="" />
+      </a>
+
+      <ul class="Menu-Horizontal">
+        <li><a href="">Inicio</a></li>
+        <li>
+          <a href="">Categorías</a>
+          <ul class="Menu-vertical">
+            <li><a href="">Pago Servicios</a></li>
+            <li><a href="">Pago impuestos</a></li>
+            <li><a href="">Transferencias</a></li>
+            <li><a href="">Financieros</a></li>
+          </ul>
+        </li>
+        <li><a href="">Ofertas</a></li>
+        <li><a href="">Contactanos</a></li>
+      </ul>
+    </nav>
+    <!--SECCION PRODUCTOS-->
+    <section class="seccion-productos">
+      <div class="div-gen-prod">
+        <div class="div-prod-texto">
+          <h2>Seccion Productos</h2>
+          <p>
+            En FitStore, creemos que la clave del éxito está en combinar una
+            buena alimentación con la suplementación adecuada. Somos una tienda
+            especializada en productos nutricionales y deportivos que busca
+            ayudarte a alcanzar tus metas de forma segura y efectiva. Ofrecemos
+            una amplia variedad de suplementos de alta calidad —proteínas,
+            aminoácidos, creatinas, vitaminas y más— seleccionados de las
+            mejores marcas del mercado para garantizar resultados reales y
+            confiables.
+          </p>
+          <p>
+            Más que una tienda, FitStore es tu aliado en el camino hacia una
+            vida más activa y saludable. Nuestro equipo está comprometido en
+            brindarte asesoría personalizada y acompañamiento para que
+            encuentres los productos que mejor se adapten a tus objetivos. Ya
+            sea que entrenes por rendimiento, estética o bienestar, en FitStore
+            encontrarás todo lo que necesitas para llevar tu cuerpo y tu mente
+            al siguiente nivel.
+          </p>
+        </div>
+
+        <div class="div-prod-img">
+          <img src="img/suplementos.jpg" />
+        </div>
+      </div>
+    </section>
+    <!--SECCION OFERTAS-->
+    <section class="seccion-ofertas">
+      <div class="div-gen-ofer">
+        <div class="div-ofer-texto">
+          <h2>Seccion Ofertas</h2>
+          <p>
+            En FitStore, sabemos que cuidar tu cuerpo y alcanzar tus metas no
+            debería significar gastar de más. Por eso, hemos creado una sección
+            especial de ofertas donde podrás encontrar tus suplementos favoritos
+            a precios irresistibles. Desde proteínas y creatinas hasta
+            multivitamínicos y productos naturales, aquí descubrirás descuentos
+            exclusivos en las marcas más reconocidas del mercado.
+          </p>
+          <p>
+            Aprovecha esta oportunidad para potenciar tu entrenamiento sin
+            afectar tu bolsillo. Las promociones cambian constantemente, así que
+            no esperes demasiado: lo que hoy está en oferta, mañana podría
+            agotarse. Mira el video a continuación y entérate de las mejores
+            promociones que FitStore tiene para ti. ¡Tu progreso empieza con una
+            buena decisión!
+          </p>
+        </div>
+
+        <div class="div-ofer-video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/IWbhbkqwoAw?si=PokKnmU-UrRj8vPq"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!--SECCION Formulario-->
+    <section class="seccion-formulario">
+      <div class="div-cont-formulario">
+        <h2>Formulario de Registro</h2>
+        <p>Complete todos los campos</p>
+        <form class="formulario">
+          <!--LABEL/INPUT-->
+          <div class="campo">
+            <label for="nombre">Nombres Completos:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="ingrese sus nombres"
+            />
+          </div>
+
+          <!--MENU DESPEGABLE-->
+          <div class="campo">
+            <label for="nombre">Pais:</label>
+            <select id="pais" name="pais">
+              <option value="">seleccione un pais</option>
+              <option value="Peru">Peru</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Uruguay">Uruguay/option></option>
+              <option value="Brasil">Brasil</option>
+              <option value="Colombia">Colombia</option>
+            </select>
+          </div>
+
+          <!--CHECKBOX-->
+          <div class="campo">
+            <label>Intereses:</label>
+            <ul class="lista-checkbox">
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="Intereses"
+                    value="Proteina"
+                  />Proteina</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="Intereses"
+                    value="Vitamina"
+                  />Vitamina</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="Intereses"
+                    value="Preentreno"
+                  />Preentreno</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!--RADIO-->
+          <div class="campo">
+            <label>Sexo:</label>
+            <ul class="lista-radio">
+              <li>
+                <label
+                  ><input
+                    type="radio"
+                    name="sexo"
+                    value="masculino"
+                  />Masculino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="radio"
+                    name="sexo"
+                    value="femenino"
+                  />Femenino</label
+                >
+              </li>
+            </ul>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+    <!-- PIE DE PAGINA -->
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img src="img/logo_oficial.jpg" alt="Logo" class="footer-logo" />
+            <p>FIFSTORE</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="/Documentos/3.politica-privacidad.pdf"
+              >Política de Privacidad</a
+            >
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="#">Términos y Condiciones</a>
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="/Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>

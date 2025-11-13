@@ -1,0 +1,175 @@
+.topheader {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25rem;
+}
+
+.Menu-Horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.Menu-Horizontal li a {
+  display: block;
+  text-decoration: none;
+}
+
+.Menu-Horizontal li a:hover {
+  color: red;
+  font-size: 0.938rem;
+}
+
+.Menu-vertical {
+  padding: 0;
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 6.25rem;
+  background-color: gainsboro;
+}
+
+.Menu-Horizontal li:hover .Menu-vertical {
+  display: block;
+}
+
+.Menu-vertical li a {
+  padding: 0.938rem 0.938rem 0.938rem 1.25rem;
+}
+/* SECCION PRODUCTOS */
+.seccion-productos {
+  padding: 3.75rem 1.25rem;
+  background-color: white;
+}
+.div-gen-prod {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+.div-prod-texto {
+  flex: 1;
+}
+.div-prod-texto h2 {
+  color: blue;
+  margin-bottom: 0.938rem;
+}
+.div-prod-texto p {
+  color: black;
+  line-height: 1.5;
+  text-align: justify;
+}
+.div-prod-img {
+  flex: 1;
+}
+.div-prod-img img {
+  width: 100%;
+  max-width: 31.25rem;
+}
+
+.div-gen-ofer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+.div-ofer-texto {
+  flex: 1;
+  text-align: justify;
+}
+.div-ofer-texto h2 {
+  color: blue;
+  margin-bottom: 0.938rem;
+}
+
+.div-ofer-texto p {
+  color: black;
+  line-height: 1.6;
+  text-align: justify;
+}
+.div-ofer-video {
+  flex: 1;
+}
+
+.div-ofer-video iframe {
+  width: 100% 
+  max-width: 31.25rem;
+}
+
+/*FORMULARIO*/
+.div-cont-formulario h2 {
+  color: white;
+  margin-bottom: 0.938rem;
+}
+
+.div-cont-formulario p{
+  color: white;
+  margin-bottom: 0.938rem;
+}
+.seccion-formulario {
+  background-color: black;
+  padding: 2.5rem;
+  border: 0.188rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.div-cont-formulario{
+  background-color: orange;
+  padding: 1.875rem;
+  border: 0.125rem solid black;
+  border-radius: 0.625rem;
+  width: 100%;
+  max-width: 31.25rem;
+}
+
+.campo{
+  border:0.063rem;
+  padding: 0.938rem;
+  margin-bottom: 0.938rem;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+.formulario label{
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color:blue;
+}
+/*inputs y select*/
+.formulario input[type="text"], 
+.formulario select{
+  width: 100%;
+  padding: 0.625rem;
+  border: 0.063rem solid black;
+  border-radius: 0.313rem;
+  box-sizing: border-box;
+}
+
+.lista-checkbox, 
+.lista-radio {
+  list-style: none;
+  padding: 0.625rem;
+  margin: 0;
+  border: 0.063rem;
+  background-color: rgba(125, 164, 236, 0.945);
+  border-radius: 0.313rem;
+}
+button{
+  background-color: aliceblue;
+  color: black;
+  border: 0.063rem solid black;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.313rem;
+  cursor: pointer;
+}
